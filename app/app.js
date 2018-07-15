@@ -2,21 +2,23 @@
 
 // Declare app level module which depends on views, and components
 var appModule=angular.module('myApp', [
-  'ui.router'
+  'ui.router','ngCookies'
 ]);
 
-appModule.controller('MainCtrl',function($scope,$rootScope){
-  $rootScope.authenticated=false;
-  console.log("Main Controller called");
+appModule.controller('MainCtrl',function($scope, $rootScope, $cookies){
+    var cookieData = $cookies.getObject('cookieData');
+    $rootScope.authenticated = (cookieData)?true:false;
+    console.log("Main Controller called");
 
-
-  $scope.logout=function(){
 
     /*
-    Logout implementation
-     */
-    $rootScope.authenticated=false;
-  }
+   Logout implementation
+    */
+
+    $scope.logout=function(){
+        $cookies.remove('cookieData');
+        $rootScope.authenticated=false;
+    }
 });
 
 appModule.config(function ($stateProvider, $urlRouterProvider) {

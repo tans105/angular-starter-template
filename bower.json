@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
+  "name": "angular-starter-template",
   "description": "A starter project for AngularJS",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-seed",
+  "homepage": "https://github.com/tans105/angular-starter-template.git",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "html5-boilerplate": "^5.3.0",
     "angular-ui-router": "0.2.15",
     "jquery": "3.2.1",
-    "bootstrap": "3.3.7"
+    "bootstrap": "3.3.7",
+    "angular-cookies": "1.5.11"
   }
 }

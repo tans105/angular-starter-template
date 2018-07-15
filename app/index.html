@@ -23,7 +23,6 @@
 
   <div ng-if="authenticated">
     <div ui-view></div>
-
   </div>
 
 
@@ -31,11 +30,8 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-
-  <!--Switching to UI-Router-->
-  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
 
 
   <!--Internal JS-->
@@ -45,6 +41,9 @@
   <script src="app-modules/main/home/home-modules/module-2/module-2.js"></script>
   <script src="app-modules/main/home/home-modules/module-1/module-1.js"></script>
 
+
+  <!--App Services-->
+  <script src="app-modules/login/login-service.js"></script>
 
 </body>
 </html>
