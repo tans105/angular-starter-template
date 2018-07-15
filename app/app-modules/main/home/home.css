@@ -1,1 +1,19 @@
-.active { color: red; font-weight: bolder; }
+.active { font-weight: bolder; }
+
+.bac-adjust{
+    background-color: #4CAF50 !important;
+    border: none !important;
+}
+
+.bac-adjust a{
+    color: white !important;
+}
+
+.nav-left a{
+    color: white !important;
+}
+
+.navbar-right a{
+    color: white !important;
+}
+
